@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Shao</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="images/favicon.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <div id="intro">
+    <h1>Michael Shao</h1>
+    <h4 id="contacts">
+      <a href="mailto:michlsha@seas.upenn.edu" class=""><img src="images/icons8-email-96.png">michlsha@seas.upenn.edu</a> <br>
+      <a href="http://www.linkedin.com/in/michael-shao-1001" class=""><img src="images/LinkedIn-Logos/LI-In-Bug.png">Linkedin</a> <br>
+      <a href="https://github.com/michl1001" class=""><img src="images/github-mark/github-mark.png">Github</a> 
+    </h4>
+
+    <br>
+    <p id="intro-blurb">
+      Hello! I'm a first year Robotics Masters student at University of Pennsylvania. 
+      My work genereally focuses on embedded systems and controls though I've picked up work 
+      and skills in PCB design, minor mechanical design, backend development and databases.
+    </p>
+
+    <img id="quad" src="images/quad.jpg">
+
+    <br>
+    <p>
+      See what I'm working on!
+    </p>
+    <div class="project-sec">
+      <a href="#cur-work" class="projects">Current Work</a>
+    </div>
+    <p>
+      See my past work!
+    </p>
+    <div class="project-sec">
+      <a href="#past-work" class="projects">Past Work</a>
+    </div>
+  </div>
+  <hr>
+  <div id="body">
+    <section class="projects" id="cur-work">
+      <h2>Current Work</h2>
+      <ul>
+        <li>
+          <h3>Research Intern</h3>
+          <h4>
+            Figueroa Lab, University of Pennsylvania
+          </h4>
+          <p>
+            Research
+          </p>
+          <a href="https://wcsng.ucsd.edu/" class="button">View Site</a>
+        </li>
+        <li style="visibility: hidden;">
+          <h3>Monoud</h3>
+          <h4>UPenn</h4>
+          <p>Designed a robot controller for balencing and jumping using Model Predictive Control</p>
+          <!--<a href="#" class="button">View Project</a>-->
+        </li>
+      </ul>
+    </section>
+    <section class="projects" id="past-work">
+      <h2>Past Work</h2>
+      <ul>
+        <li>
+          <h3>Research Intern</h3>
+          <h4>
+            Wireless Communication, Sensing and Networking Group (WCSNG)
+          </h4>
+          <p>
+            Continuing research on the <a href="https://wcsng.ucsd.edu/uloc/">Uloc</a> system. Particularly reviewing the system's efficacy and role in body rigging
+            as opposed to IMU based solutions.
+          </p>
+          <a href="https://wcsng.ucsd.edu/" class="button">View Site</a>
+        </li>
+        <li>
+          <h3>Electronics Lead</h3>
+          <h4>Triton Robotics</h4>
+          <p>Established the Electonics team, responsible for designing custom PCBs for power, system communication and control. 
+            Taught recruits, directed projects, and handled manufacturing logistics.</p>
+          <a href="#" class="button">View Project</a>
+        </li>
+        <li>
+          <h3>Research Intern</h3>
+          <h4>National Institute of Standards and Technology (NIST)</h4>
+          <p>Designed and implemented data analysis tools to estimate the regional impact of hurricanes based on NHC data and 
+            infrastructure data in real time.</p>
+        </li>
+        <li>
+          <h3>SDE Intern</h3>
+          <h4>Amazon</h4>
+          <p>Developed internal database tools and pipelines to facilitate data monitoring and audit processes on the Amazon website, 
+            allowing the team to reduce errors and outliers.
+          </p>
+        </li>
+        <li>
+          <h3>Backend Developer</h3>
+          <h4>ACM @ UCSD</h4>
+          <p>Maintained and developed on the backend server for the main website with others on the development team, designing new 
+            features and operating on the database.
+          </p>
+          <a href="https://github.com/acmucsd/membership-portal/" class="button">View Project</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // Smooth scrolling to anchor links
+    $('a[href*="#"]').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+
