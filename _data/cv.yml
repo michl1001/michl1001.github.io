@@ -2,64 +2,83 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Michael Shao
     - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: 4th March 2001
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: MS Robotics
+      institution: University of Pennsylvannia
+      year: 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Expanded my experience to higher level level robotics algorithms, practical development of IoT edge devices and networks, and foundations in entreprenuership
+        - title: Topics
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Control and Optimization
+            - Dynamic Systems
+            - Wireless networks (Wifi, BLE, LoRa, Cellular)
+            - State Estimation
+    - title: BS Computer Engineering
+      institution: University of California, San Diego
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
+        - Laid a foundation on major CS concepts, embedded programming, general programming practices, and hardware design
+        - title: Topics
+          contents:
+            - Algorithms
+            - CI/CD pipelines
+            - Testing
+            - PCB design
+            - Backend development
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Course Developer / Head TA
+      institution: University of Pennsylvania
+      year: 2024 - 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Designed and instructed a graduate-level course on scalable IoT systems for industrial applications, covering CI/CD pipelines, fleet management, RTOS development (Zephyr, FreeRTOS), wireless protocols (LoRa, BLE, Wi-Fi, Cellular), and PCB design.
+        - Modernized the course’s technical infrastructure by integrating the latest wireless microcontrollers, enabling broader application scenarios and simplifying the design and development of embedded software.
+    - title: Research Assistant
+      institution: Penn Computational Intelligence Lab (PennCIL)
+      year: 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Prototyped an analytical benchmarking tool to support robotic hardware-software co-design by modeling trade-offs between minimal compute architectures and the effectiveness of various control algorithms—derisking the time and resource intensive physical testing when designing custom robotic hardware.
+    - title: Research Assistant
+      institution: Mobile Manipulator Project, Nadia Figueroa Lab
+      year: 2023 - 2024
       description:
+        - Upgraded the onboard Jetson computer of a SCOUT II rover by reconﬁguring the full software stack, transitioning the system to ROS 2 and writing custom scripts to streamline data collection and operational workflows
+    - title: Undergraduate Researcher
+      institution: ULoc, Wireless Communication, Sensing and Networking Group (WCSNG)
+      year: 2023
+      description:
+        - Tuned and calibrated a cluster of IMU and UWB sensors to enable accurate VR body orientation and position tracking. Conducted comparative analysis of various ﬁltering and state estimation models to evaluate and benchmark the lab’s sensor fusion pipeline against other IMU-based VR tracking systems.
+    - title: Electronics Executive
+      institution: Triton Robotics (TR)
+      year: 2020 - 2023
+      description:
+        - Founded and built the electronics team to develop hardware solutions that enhanced robotic performance and maintainability. Primary projects included prototyping a super-capacitor augmented power PCB and designing a custom STM32 Nucleo shield that restructured the electrical architecture for improved maintainability, bandwidth, and power protection.
+    - title: Undergraduate CSE Head Tutor
+      institution: University of California, San Diego (UCSD)
+      year: 2021 - 2023
+      description:
+        - Taught system programming/architecture in C and ARM assembly to 400+ students, holding small classes (discussion sections), conducting 1 on 1 tutoring sessions and designing class and exam assignments.
+    - title: SDE Intern
+      institution: Amazon Inc
+      year: 2022
+      description:
+        - Redesigned a previously manual anomaly review system into scalable tools, pipelines, and APIs, streamlining data audits and enabling global teams to efﬁciently monitor and resolve ML pipeline issues for the Amazon website.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Domestic Guest Researcher
+      institution: National Institute of Standards and Technology (NIST)
+      year: 2021
+      description:
+        - Using SQL and GeoPandas, built tools that automated data analysis that predicted the regional impact of imminent hurricanes based on forecasts and local infrastructure. Research presented at the Americas Conference on Wind Engineering (ACWE). 
+        - Automated bulk data analysis, dataset formatting, and database updates using SQL queries and GeoPandas.
 
 - title: Open Source Projects
   type: time_table
@@ -68,25 +87,29 @@
       year: 2015-now
       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items:
+#         - Nobel Prize in Physics
+#         - Matteucci Medal
+#     - year: 2029
+#       items:
+#         - Max Planck Medal
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Resource Constrained Robotics
       items:
         - Description 1.
         - Description 2.
-    - title: Topic 2.
+    - title: Medical Technologies
+      items:
+        - Description 1.
+        - Description 2.
+    - title: Quantum Computing
       items:
         - Description 1.
         - Description 2.
@@ -94,4 +117,8 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Baking
+    - 3D Printing / Tinkering
+    - Hiking
+    - Sketching
+

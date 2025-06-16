@@ -1,25 +1,28 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: SE(3) LPV-DS for Quadrotor Systems
+description: Robust, Generalized point to point navigation
 img: assets/img/12.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
+Consider a kinematic chain - an hand manipulator attached to many joints that can interact with the world. If we want a system that can move the hand from one place to another, we could plot out a spline trajectory like so
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+which can then be fed into a simple PID controller to achieve a satisfactory control of the system.
+
+Sounds pretty good right? For basic control in a lab or isolated environment, it is! The problems rise when the system has to be reactive - i.e.have complex interaction with a non-static world. For example, say the robot has to hand a box to a person and contend with the human's grip and forcefulness. What if the human pushes the robot? Should the robot give space to the human or remain rigid? What about moving obstacles and people? In traditional robotics, the robot would likely have to replan it's movement trajectory as obstacle occlude which can force the robot to less reactive.
+
+The Figeuroa Lab developed the 
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -43,6 +46,8 @@ To give your project a background in the portfolio page, just add the img tag to
 <div class="caption">
     This image can also have a caption. It's like magic.
 </div>
+
+
 
 You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
 Say you wanted to write a bit about your project before you posted the rest of the images.
