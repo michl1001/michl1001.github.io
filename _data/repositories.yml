@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
-
+  - michl1001
+  
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - acmucsd/membership-portal
+  - ese5160/a14g-final-submission-t17-team-gotcha
+  - upenn-embedded/UPenn-embedded-sys-handbook
