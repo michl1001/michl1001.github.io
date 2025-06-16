@@ -5,7 +5,6 @@
       value: Michael Shao
     - name: Date of Birth
       value: 4th March 2001
-
 - title: Education
   type: time_table
   contents:
