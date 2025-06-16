@@ -76,7 +76,7 @@
       institution: National Institute of Standards and Technology (NIST)
       year: 2021
       description:
-        - Using SQL and GeoPandas, built tools that automated data analysis that predicted the regional impact of imminent hurricanes based on forecasts and local infrastructure. Research presented at the Americas Conference on Wind Engineering (ACWE). 
+        - Using SQL and GeoPandas, built tools that automated data analysis that predicted the regional impact of imminent hurricanes based on forecasts and local infrastructure. Research presented at the Americas Conference on Wind Engineering (ACWE).
         - Automated bulk data analysis, dataset formatting, and database updates using SQL queries and GeoPandas.
 
 - title: Open Source Projects
@@ -120,4 +120,3 @@
     - 3D Printing / Tinkering
     - Hiking
     - Sketching
-
