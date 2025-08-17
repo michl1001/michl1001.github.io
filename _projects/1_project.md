@@ -8,7 +8,12 @@ category: work
 related_publications: false
 ---
 
-Consider a kinematic chain - an hand manipulator attached to many joints that can interact with the world. If we want a system that can move the hand from one place to another, we could plot out a spline trajectory like so
+Over my last semester at my masters, I was on a team that applied Dynamical System Trajectory Planners to Quadcopter path planning to investigate how well the global stability guarantees hold for such systems.
+
+## Background
+Consider the Kuka Robot. We can model the robot as a kinematic chain - a hand manipulator attached to many rotational joints. The dynamics of these kinds of robots are *relatively* straight forward (#########if needing many more calculations as multiplications compound#########) so we can create a linear model to operate our dynamics.
+
+So, let's say, we want a system that can move the hand from one point in space to another. We *could* plot out a spline trajectory like so
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -16,11 +21,32 @@ Consider a kinematic chain - an hand manipulator attached to many joints that ca
     </div>
 </div>
 
-which can then be fed into a simple PID controller to achieve a satisfactory control of the system.
+which can then be fed into a PID controller to achieve control of the system.
 
-Sounds pretty good right? For basic control in a lab or isolated environment, it is! The problems rise when the system has to be reactive - i.e.have complex interaction with a non-static world. For example, say the robot has to hand a box to a person and contend with the human's grip and forcefulness. What if the human pushes the robot? Should the robot give space to the human or remain rigid? What about moving obstacles and people? In traditional robotics, the robot would likely have to replan it's movement trajectory as obstacle occlude which can force the robot to less reactive.
+## Why Bother with Dynamical systems?
+Sounds pretty straight forward right? For basic control in a lab or isolated environment, it is! The problems rise when we reach the otuside world - modeling/navigating interaction with a non-static world. For example, say the robot has to hand a box to a person and contend with the human's grip and forcefulness. What if the human pushes the robot? Should the robot give space to the human or remain rigid? What about moving obstacles and people? In traditional robotics, the robot would likely have to replan it's movement trajectory as obstacle occlude which can force the robot to less reactive.
 
 The Figeuroa Lab developed the
+
+
+## Why put it on a quadcopter?
+
+
+## How'd it perform?
+
+
+
+
+
+
+
+
+
+
+
+### Why not Inverse Kinematics?
+
+
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 
