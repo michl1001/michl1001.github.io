@@ -24,8 +24,8 @@ latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
----
-m
+
+  
 Hello! I'm Michael, a recent Master's graduate from the University of Pensylvania. My main interest is resource-constrained robotics - using an understanding of underlying controls and embedded systems to design, build, and control robots that don't have to rely exclusively on expensive, high-end hardware. My experience is grounded in embedded systems, control, and backend systems with additional experience in networking, architecture, and software engineering.
 
 I'm currently working on updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160) at the University of Pennsylvania.

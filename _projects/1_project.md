@@ -32,6 +32,7 @@ Sounds pretty straight forward right? For basic control in a lab or isolated env
 - How robot give way to outside forces or remain tightly on the trajectory plan? 
 - What about moving obstacles and people? 
 
+
 In the system explained above, the robot would likely have to replan it's movement trajectory for every time the enviroment significantly changes - a very inefficient process - or else risk disruptting it's path or, worse, crashing.
 
 This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
