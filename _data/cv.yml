@@ -10,7 +10,7 @@
   contents:
     - title: MS Robotics
       institution: University of Pennsylvannia
-      year: 2025
+      year: 2023 - 2025
       description:
         - Expanded my experience to higher level level robotics algorithms, practical development of IoT edge devices and networks, and foundations in entreprenuership
         - title: Topics
@@ -21,7 +21,7 @@
             - State Estimation
     - title: BS Computer Engineering
       institution: University of California, San Diego
-      year: 2023
+      year: 2019 - 2023
       description:
         - Laid a foundation on major CS concepts, embedded programming, general programming practices, and hardware design
         - title: Topics
@@ -79,12 +79,21 @@
         - Using SQL and GeoPandas, built tools that automated data analysis that predicted the regional impact of imminent hurricanes based on forecasts and local infrastructure. Research presented at the Americas Conference on Wind Engineering (ACWE).
         - Automated bulk data analysis, dataset formatting, and database updates using SQL queries and GeoPandas.
 
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://michl1001.github.io/projects/1_project/">SE(3) LPV-DS for Quadrotors</a>
+      year: 2024
+      description: 
+        - A trajectory planner for quadrotors that uses dynamical systems, allowing it to adapt to perturbations and changes in the environment without needing to replan its path.
+        - Modified our simulator to automate testing for our controller with various flight paths and perturbations. Wrote the design modifications required to allow the original LPV-DS systems to be used with a quadrotor's control systems.
+
+#- title: Open Source Projects
+#  type: time_table
+#  contents:
+#    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#      year: 2015-now
+#      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 # - title: Honors and Awards
 #   type: time_table
@@ -97,26 +106,48 @@
 #       items:
 #         - Max Planck Medal
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Resource Constrained Robotics
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Medical Technologies
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Quantum Computing
-      items:
-        - Description 1.
-        - Description 2.
+# - title: Academic Interests
+#  type: nested_list
+#  contents:
+#    - title: Resource Constrained Robotics
+#      items:
+#        - Description 1.
+#        - Description 2.
+#    - title: Medical Technologies
+#      items:
+#        - Description 1.
+#        - Description 2.
+#    - title: Quantum Computing
+#      items:
+#        - Description 1.
+#        - Description 2. #
 
-- title: Other Interests
+- title: Skills
   type: list
   contents:
-    - Baking
-    - 3D Printing / Tinkering
-    - Hiking
-    - Sketching
+    - Programming Languages:
+      items:
+        - Python
+        - C/C++
+        - JavaScript
+        - Java
+    - Frameworks and Libraries:
+      items:
+        - ROS 2
+        - FreeRTOS
+        - TensorFlow
+        - PyTorch
+        - OpenCV
+    - Tools and Technologies:
+      items:
+        - Git/GitHub
+        - Docker
+        - CI/CD Pipelines
+        - Microcontrollers
+        - Board Communication (I2C, SPI, UART, CAN)
+        - PCB Design (KiCad,Altium,EASYEDA)
+        - Cloud Platforms (AWS, Azure)
+        - Database Management (MySQL, PostgreSQL)
+        - Simulation Tools (Gazebo, Webots)
+        - Networking Protocols (TCP/IP, MQTT, HTTP)
+        - Computer Aided Design (CAD) (SolidWorks, AutoCAD)
