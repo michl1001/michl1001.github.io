@@ -84,7 +84,7 @@
   contents:
     - title: <a href="https://michl1001.github.io/projects/1_project/">SE(3) LPV-DS for Quadrotors</a>
       year: 2024
-      description: 
+      description:
         - A trajectory planner for quadrotors that uses dynamical systems, allowing it to adapt to perturbations and changes in the environment without needing to replan its path.
         - Modified our simulator to automate testing for our controller with various flight paths and perturbations. Wrote the design modifications required to allow the original LPV-DS systems to be used with a quadrotor's control systems.
 
