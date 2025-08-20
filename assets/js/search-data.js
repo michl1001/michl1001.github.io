@@ -24,7 +24,7 @@ ninja.data = [{
             window.location.href = "/repositories/";
           },
         },{id: "nav-cv-resume",
-          title: "cv/resume",
+          title: "CV/Resume",
           description: "Here is a quick overview of my experience, skills, and interests.",
           section: "Navigation",
           handler: () => {
