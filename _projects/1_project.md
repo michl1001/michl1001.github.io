@@ -9,14 +9,16 @@ related_publications: false
 ---
 
 ### Synopsis / Contributions
-Linear Dynamic Systems are a class of systems where for a given state (position, speed, acceleration, etc.), we can provide some desired action (setting a speed or acceleration). We applied this in the context of trajectory planning for quadrotors in order to achieve lightweight and robust navigation that may be modulated to environmental changes. 
+
+Linear Dynamic Systems are a class of systems where for a given state (position, speed, acceleration, etc.), we can provide some desired action (setting a speed or acceleration). We applied this in the context of trajectory planning for quadrotors in order to achieve lightweight and robust navigation that may be modulated to environmental changes.
 
 As part of a team, I modified our simulator to rapidly test our controller with various flight paths and with perturbations. I also wrote the design modifications required to allow the original LPV-DS systems to be used with a quadrotor's control systems.
 
 ### Background
-Consider the Kuka Robot. We can model the robot as a kinematic chain - a hand manipulator attached to many rotational joints. The dynamics of these kinds of robots are *relatively* lightweight so we can create a linear model to operate our dynamics.
 
-So, let's say, we want a system that can move the hand from one point in space to another. We *could* plot out a spline trajectory like so
+Consider the Kuka Robot. We can model the robot as a kinematic chain - a hand manipulator attached to many rotational joints. The dynamics of these kinds of robots are _relatively_ lightweight so we can create a linear model to operate our dynamics.
+
+So, let's say, we want a system that can move the hand from one point in space to another. We _could_ plot out a spline trajectory like so
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -27,11 +29,12 @@ So, let's say, we want a system that can move the hand from one point in space t
 which can then be fed into a PID controller to achieve control of the system.
 
 ### Why Bother with Dynamical systems?
-Sounds pretty straight forward right? For basic control in a lab or isolated environment, it is! The problems rise when we reach the otuside world - modeling/navigating interaction with a non-static world. For example, say the robot has to hand a box to a person and contend with the human's grip and forcefulness.
-- What if the human pushes the robot off course? 
-- How robot give way to outside forces or remain tightly on the trajectory plan? 
-- What about moving obstacles and people? 
 
+Sounds pretty straight forward right? For basic control in a lab or isolated environment, it is! The problems rise when we reach the otuside world - modeling/navigating interaction with a non-static world. For example, say the robot has to hand a box to a person and contend with the human's grip and forcefulness.
+
+- What if the human pushes the robot off course?
+- How robot give way to outside forces or remain tightly on the trajectory plan?
+- What about moving obstacles and people?
 
 In the system explained above, the robot would likely have to replan it's movement trajectory for every time the enviroment significantly changes - a very inefficient process - or else risk disruptting it's path or, worse, crashing.
 
@@ -46,12 +49,12 @@ This problem prompted the Figeuroa Lab to look into the use of dynamical systems
     The red line represents the target trajectory, and the arrows represent the directional control from the DS. You can see that the DS guides the robot towards and long the trajectory across the entire space.
 </div>
 
-
-Their particular solution, Linear Parameter Varying Dynamical Systems (LPV-DS), is a system that takes example trajectories and forms a dynamical system model which applies globally the robot's possible states and inputs. 
+Their particular solution, Linear Parameter Varying Dynamical Systems (LPV-DS), is a system that takes example trajectories and forms a dynamical system model which applies globally the robot's possible states and inputs.
 
 In laymen's terms, given a few demonstrated trajectories, the LPV-DS will generalize the trajectories for the entire environment for a more robust trajectory formulation. This means perturbation recovery is built into how the trajectory planning.
 
 ### Why put it on a quadcopter?
+
 Academically, this presented a challenge that would allow us to expand the project to a new area and address it's potential limitations.
 
 Practically, quadcopters may have a lot to benefit from this system. Quadcopters are very susceptible to perturbations and changing environments (wind, objects, etc) and having robustness and adaptivity built into the trajectory planner may give the system more resilience against crashes and misnavigation.
@@ -65,18 +68,15 @@ These ultimately mean that a robot manipulator can move arbitrarily in any direc
 
 Quadcopters are not any of these which may means using LPV-DS would take some extra work to make viable. -->
 
-
-
-
 <!-- ## How'd it perform?
 
 which can then be fed into a PID controller to achieve control of the system.
 
 ## Why Bother with Dynamical systems?
 Sounds pretty straight forward right? For basic control in a lab or isolated environment, it is! The problems rise when we reach the otuside world - modeling/navigating interaction with a non-static world. For example, say the robot has to hand a box to a person and contend with the human's grip and forcefulness.
-- What if the human pushes the robot off course? 
-- How robot give way to outside forces or remain tightly on the trajectory plan? 
-- What about moving obstacles and people? 
+- What if the human pushes the robot off course?
+- How robot give way to outside forces or remain tightly on the trajectory plan?
+- What about moving obstacles and people?
 
 
 In the system explained above, the robot would likely have to replan it's movement trajectory for every time the enviroment significantly changes - a very inefficient process - or else risk disruptting it's path or, worse, crashing.
@@ -86,7 +86,7 @@ This problem prompted the Figeuroa Lab to look into the use of dynamical systems
 ############# insert examples image here ###############33
 
 
-Their particular solution, Linear Parameter Varying Dynamical Systems (LPV-DS), is a system that takes example trajectories and forms a dynamical system model which applies globally the robot's possible states and inputs. 
+Their particular solution, Linear Parameter Varying Dynamical Systems (LPV-DS), is a system that takes example trajectories and forms a dynamical system model which applies globally the robot's possible states and inputs.
 
 In laymen's terms, given a few demonstrated trajectories, the LPV-DS will generalize the trajectories for the entire environment for a more robust trajectory formulation. This means perturbation recovery is built into how the trajectory planning.
 
@@ -101,9 +101,6 @@ Practically, quadcopters may have a lot to benefit from this system. Quadcopters
 These ultimately mean that a robot manipulator can move arbitrarily in any direction in an instant.
 
 Quadcopters are not any of these which may means using LPV-DS would take some extra work to make viable. -->
-
-
-
 
 <!-- It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
