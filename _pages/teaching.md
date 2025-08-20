@@ -16,6 +16,7 @@ Organize your courses by years, topics, or universities, however you like! -->
 ### ESE 5160 - IoT Edge Computing
 
 #### Course description:
+
 > ESE5160 is a hands-on course that teaches its students the tools needed to design and prototype an embedded device. The design of an Internet of Things (IoT) device is used as a medium to teach the students concepts on embedded programming, hardware architecture design, IoT, and the cloud.
 
 > The class is divided into two big components – Embedded Programming and Embedded Hardware Design. Students will pair up to design an IoT device from the ground up. Industry tools and best practices will be introduced to the student and applied in this accelerated electronics product cycle. At the end of the semester, each group will end up with a physical prototype of their embedded system design
@@ -24,7 +25,6 @@ Credit: [https://ese5180.seas.upenn.edu/](https://ese5160.seas.upenn.edu/)
 #### Main Contributions
 - Updated the course technical infrastructure and corresponding assignments - replacing the old Wireless MCU with a new SoC to allow or greater RAM and Memory options, advanced security, and faster processing capabilities. Additionally, assignments and server provisioning were updated for the new paradigm to reflect the new paradigm. This process required evaluating various wireless SoC and designing a demo PCB to validate the chip's practicability in custom designs.
 - Led as Project manager for various project teams - providing technical/design guidence, managing team disputes, and reviewing both code and PCB design work.
-
 
 ### ESE 5180 - IoT Wireless, Security, & Scaling
 
@@ -45,9 +45,9 @@ Credit: [https://ese5180.seas.upenn.edu/](https://ese5180.seas.upenn.edu/)
 Initiative to provide a comprehensive guide to the various topics in Embedded Systems. Personally contributed to the guides on CI/CD pipelines base on my own experience working in industry internships and organizations.
 Credit: [https://embedded.seas.upenn.edu/](https://embedded.seas.upenn.edu/)
 
-
 ## University of California, San Diego
 ### CSE 30 - Computer Organization and Systems Programming 
+
 This course is the introduction to the underlying concepts to computer programming such as pointers, memory management, and assembly language. As part of this, we cover the single cycle machine and ARM Assembly.
 
 - Held office hours, contributed to the course examinations, held discussion sessions for an assigned group of students and managed a subset of the TAs

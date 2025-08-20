@@ -70,6 +70,39 @@ Quadcopters are not any of these which may means using LPV-DS would take some ex
 
 <!-- ## How'd it perform?
 
+which can then be fed into a PID controller to achieve control of the system.
+
+## Why Bother with Dynamical systems?
+Sounds pretty straight forward right? For basic control in a lab or isolated environment, it is! The problems rise when we reach the otuside world - modeling/navigating interaction with a non-static world. For example, say the robot has to hand a box to a person and contend with the human's grip and forcefulness.
+- What if the human pushes the robot off course? 
+- How robot give way to outside forces or remain tightly on the trajectory plan? 
+- What about moving obstacles and people? 
+
+
+In the system explained above, the robot would likely have to replan it's movement trajectory for every time the enviroment significantly changes - a very inefficient process - or else risk disruptting it's path or, worse, crashing.
+
+This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
+
+############# insert examples image here ###############33
+
+
+Their particular solution, Linear Parameter Varying Dynamical Systems (LPV-DS), is a system that takes example trajectories and forms a dynamical system model which applies globally the robot's possible states and inputs. 
+
+In laymen's terms, given a few demonstrated trajectories, the LPV-DS will generalize the trajectories for the entire environment for a more robust trajectory formulation. This means perturbation recovery is built into how the trajectory planning.
+
+## Why put it on a quadcopter?
+Academically, this presented a challenge that would allow us to expand the project to a new area and address it's potential limitations.
+
+Practically, quadcopters may have a lot to benefit from this system. Quadcopters are very susceptible to perturbations and changing environments (wind, objects, etc) and having robustness and adaptivity built into the trajectory planner may give the system more resilience against crashes and misnaviagation.
+
+<!-- Using this system for a quadcopter was a great way to stress test the system. The original design of LPV-DS is designed for arm manipulators which have some nice properties:
+- Over-Actuated
+- Holonomic
+These ultimately mean that a robot manipulator can move arbitrarily in any direction in an instant.
+
+Quadcopters are not any of these which may means using LPV-DS would take some extra work to make viable. -->
+
+
 
 
 <!-- It's easy to include images in a flexible 3-column grid format.
