@@ -38,10 +38,14 @@ Sounds pretty straight forward right? For basic control in a lab or isolated env
 
 In the system explained above, the robot would likely have to replan it's movement trajectory for every time the enviroment significantly changes - a very inefficient process - or else risk disruptting it's path or, worse, crashing.
 
-This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
+
 
 <div class="row justify-content-sm-right">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-6 mt-md-0">
+        This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
+    </div>
+</div>
+    <div class="col-sm-3 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/vector_field.jpg" title="Example DS vector field" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
