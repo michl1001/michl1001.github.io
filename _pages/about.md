@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <p>MS Robotics, University of Pensylvannia 2025. BS Computer Engineering, UCSD 2023.</p>
 
