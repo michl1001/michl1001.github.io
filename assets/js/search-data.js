@@ -4,21 +4,21 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "",
+  },{id: "nav-projects",
+          title: "Projects",
+          description: "Some projects with too much content for a resume.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/blog/";
+            window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          title: "Repositories",
+          description: "Some stats from my github account.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -31,8 +31,8 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
         },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          title: "Teaching",
+          description: "My history with teaching and course development.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -418,7 +418,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-se-3-lpv-ds-for-quadrotor-systems",
           title: 'SE(3) LPV-DS for Quadrotor Systems',
-          description: "Robust, Generalized point to point navigation",
+          description: "Robust, generalized point-to-point trajectory planning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{
