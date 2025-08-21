@@ -125,20 +125,20 @@
 - title: Skills
   type: list
   contents:
-    - Programming Languages:
+    - title: Programming Languages
       items:
         - Python
         - C/C++
         - JavaScript
         - Java
-    - Frameworks and Libraries:
+    - title: Frameworks and Libraries
       items:
         - ROS 2
         - FreeRTOS
         - TensorFlow
         - PyTorch
         - OpenCV
-    - Tools and Technologies:
+    - title: Tools and Technologies
       items:
         - Git/GitHub
         - Docker
