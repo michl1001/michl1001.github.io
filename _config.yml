@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: 
+title: blank
 # the website title (if blank, full name will be used instead)
 first_name: Michael
-middle_name: L.
+middle_name: 
 last_name: Shao
 contact_note: >
   If you would like to get in touch, please send me an email at <a href="mailto:mlshaojr@gmail.com">mlshaojr@gmail.com</a>.

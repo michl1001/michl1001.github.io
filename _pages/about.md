@@ -35,11 +35,9 @@ My main interest is in resource-constrained robotics - to design, build, and con
 
 I'm currently working on updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160) at the University of Pennsylvania.
 
-
-### <a href="{{ '/projects/' | relative_url }}">Projects</a>
-<>
-
 <div class="projects">
+### <a href="{{ '/projects/' | relative_url }}">Projects</a>
+<hr>
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
