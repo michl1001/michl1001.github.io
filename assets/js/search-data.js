@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-michael-shao",
-    title: "Michael Shao",
+    id: "nav-",
+    title: "",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -398,7 +398,7 @@ ninja.data = [{
           title: 'SE(3) LPV-DS for Quadrotor Systems',
           description: "Robust, generalized point-to-point trajectory planning.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project.html";
+              window.location.href = "/projects/SE3_nav.html";
             },},{
         id: 'social-email',
         title: 'email',
