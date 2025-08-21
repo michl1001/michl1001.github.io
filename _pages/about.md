@@ -1,8 +1,8 @@
 ---
 layout: about
-title: Michael Shao
+title: 
 permalink: /
-subtitle: Michael Shao
+subtitle: <h2>Michael Shao</h2>
 
 profile:
   align: right
@@ -20,6 +20,8 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 display_categories: [work]
+horizontal: true
+
 
 latest_posts:
   enabled: false
@@ -27,12 +29,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I'm Michael! I'm a new Masters Graduate in Robotics from the University of Pennsylvania.
+#### Hello! I'm Michael! I'm a new Masters Graduate in Robotics from the University of Pennsylvania.
 
 My main interest is in resource-constrained robotics - to design, build, and control robots that don't have to rely exclusively on expensive, high-end hardware by exploiting the underlying controls and embedded systems. My experience is grounded in embedded systems, control, and backend systems with additional experience in networking, architecture, and software engineering.
 
 I'm currently working on updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160) at the University of Pennsylvania.
 
+
+### <a href="{{ '/projects/' | relative_url }}">Projects</a>
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
