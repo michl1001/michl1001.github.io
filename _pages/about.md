@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Michael Shao
+title:
 permalink: /
 subtitle: <h1>Michael Shao</h1>
 
@@ -34,9 +34,12 @@ latest_posts:
 My main interest is in resource-constrained robotics - to design, build, and control robots that don't have to rely exclusively on expensive, high-end hardware by exploiting the underlying controls and embedded systems. My experience is grounded in embedded systems, control, and backend systems with additional experience in networking, architecture, and software engineering.
 
 I'm currently working on updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160) at the University of Pennsylvania.
+<br>
+<br>
+<br>
 
 <div class="projects">
-### <a href="{{ '/projects/' | relative_url }}">Projects</a>
+<h2><a href="{{ '/projects/' | relative_url }}">Projects</a></h2>
 <hr>
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
