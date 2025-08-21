@@ -4,9 +4,9 @@
 
 title: blank
 # the website title (if blank, full name will be used instead)
-first_name: Michael
+first_name: Michael Shao
 middle_name: 
-last_name: Shao
+last_name:
 contact_note: >
   If you would like to get in touch, please send me an email at <a href="mailto:mlshaojr@gmail.com">mlshaojr@gmail.com</a>.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
