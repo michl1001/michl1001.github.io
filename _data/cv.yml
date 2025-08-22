@@ -12,25 +12,29 @@
       institution: University of Pennsylvannia
       year: 2023 - 2025
       description:
-        - Expanded my experience to higher level level robotics algorithms, practical development of IoT edge devices and networks, and foundations in entreprenuership
-        - title: Topics
-          contents:
-            - Control and Optimization
-            - Dynamic Systems
-            - Wireless networks (Wifi, BLE, LoRa, Cellular)
-            - State Estimation
+         - GPA: 3.87/4.0
+#        - Expanded my experience to higher level level robotics algorithms, practical development of IoT edge devices and networks, and foundations in entreprenuership
+#        - title: Topics
+#          contents:
+#            - Control and Optimization
+#            - Dynamic Systems
+#            - Wireless networks (Wifi, BLE, LoRa, Cellular)
+#            - State Estimation
+#            - Linear Systems
+#            - Mechanics
     - title: BS Computer Engineering
       institution: University of California, San Diego
       year: 2019 - 2023
       description:
-        - Laid a foundation on major CS concepts, embedded programming, general programming practices, and hardware design
-        - title: Topics
-          contents:
-            - Algorithms
-            - CI/CD pipelines
-            - Testing
-            - PCB design
-            - Backend development
+         - GPA: 3.923/4.0
+#        - Laid a foundation on major CS concepts, embedded programming, general programming practices, and hardware design
+#        - title: Topics
+#          contents:
+#            - Algorithms
+#            - CI/CD pipelines
+#            - Testing
+#            - PCB design
+#            - Backend development
 
 - title: Experience
   type: time_table

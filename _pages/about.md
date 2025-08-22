@@ -2,7 +2,7 @@
 layout: about
 title:
 permalink: /
-subtitle: Hello! I'm Michael! I'm a new Masters Graduate in Robotics from the University of Pennsylvania.
+subtitle: Robotics and Embedded Systems Graduate
 
 profile:
   align: right
@@ -29,18 +29,24 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+#### Hello! I'm Michael! I'm a new Masters Graduate in Robotics from the University of Pennsylvania.
+
 ##### My main interest is in resource-constrained robotics - to design, build, and control robots that don't have to rely exclusively on expensive, high-end hardware by exploiting the underlying controls and embedded systems. My experience is grounded in embedded systems, control, and backend systems with additional experience in networking, architecture, and software engineering.
 
-I'm currently working on updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160) at the University of Pennsylvania.
+##### I'm currently working on updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160) at the University of Pennsylvania.
 <br>
 <br>
 <br>
 <br>
 <br>
-<br><br>
 <br>
 <br>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <div class="projects">
 <h2><a href="{{ '/projects/' | relative_url }}">Projects</a></h2>
