@@ -23,16 +23,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-repositories",
-          title: "Repositories",
-          description: "Some stats from my github account.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "My history with teaching and course development.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
