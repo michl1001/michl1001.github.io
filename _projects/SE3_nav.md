@@ -60,11 +60,11 @@ Practically, quadcopters may have a lot to benefit from this system. Quadcopters
 
 <div class="row justify-content-sm-right">
     <div class="col-sm-4 mt-4 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/vector_field.jpg" title="Example DS vector field" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/SE3_results.png" title="SE3 Results" class="img-fluid rounded z-depth-1" %}
     </div>
     
     <div class="col-sm mt-6 mt-md-0">
-        This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
+        asjdfklsaf;lakdjfl;sdakjfa;kjdf;sljf;aklsjf
     </div>
 
     
