@@ -9,7 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    MS Robotics, University of Pensylvannia 2025. BS Computer Engineering, UCSD 2023.
+    MS Robotics, University of Pensylvannia 2025. 
+    BS Computer Engineering, UCSD 2023.
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -31,10 +32,9 @@ latest_posts:
 
 #### Hello! I'm Michael! I'm a new Masters Graduate in Robotics from the University of Pennsylvania.
 
-##### My main interest is in resource-constrained robotics - to design, build, and control robots that don't have to rely exclusively on expensive, high-end hardware by exploiting the underlying controls and embedded systems. My experience is grounded in embedded systems, control, and backend systems with additional experience in networking, architecture, and software engineering.
+My main interest is in resource-constrained robotics - to design, build, and control robots that don't have to rely exclusively on expensive, high-end hardware by exploiting the underlying controls and embedded systems. My experience is grounded in embedded systems, control, and backend systems with additional experience in networking, architecture, and software engineering.
 
-##### I'm currently working on updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160) at the University of Pennsylvania.
-<br>
+I'm currently working at the University of Pennsylvania, Updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160). 
 <br>
 <br>
 <br>
