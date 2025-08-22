@@ -18,15 +18,7 @@ As part of a team, I modified our simulator to rapidly test our controller with 
 
 Consider the Kuka Robot. We can model the robot as a kinematic chain - a hand manipulator attached to many rotational joints. The dynamics of these kinds of robots are _relatively_ lightweight so we can create a linear model to operate our dynamics.
 
-So, let's say, we want a system that can move the hand from one point in space to another. We _could_ plot out a spline trajectory like so
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/spline.png" title="Exmaple Spline" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-which can then be fed into a PID controller to achieve control of the system.
+So, let's say, we want a system that can move the hand from one point in space to another. We _could_ interpolate a spline trajectory - some set of line equations that are continuous in time - which can then be fed into a PID controller to achieve control of the system.
 
 ### Why Bother with Dynamical systems?
 
@@ -38,20 +30,21 @@ Sounds pretty straight forward right? For basic control in a lab or isolated env
 
 In the system explained above, the robot would likely have to replan it's movement trajectory for every time the enviroment significantly changes - a very inefficient process - or else risk disruptting it's path or, worse, crashing.
 
-This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
+
 
 <div class="row justify-content-sm-right">
     <div class="col-sm mt-6 mt-md-0">
-        placeholder
+        This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
     </div>
 
-    <div class="col-sm-3 mt-3 mt-md-0">
+    <div class="col-sm-4 mt-4 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/vector_field.jpg" title="Example DS vector field" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
+    <div class="caption">
     The red line represents the target trajectory, and the arrows represent the directional control from the DS. You can see that the DS guides the robot towards and long the trajectory across the entire space.
+    </div>
 </div>
+
 
 Their particular solution, Linear Parameter Varying Dynamical Systems (LPV-DS), is a system that takes example trajectories and forms a dynamical system model which applies globally the robot's possible states and inputs.
 
@@ -64,6 +57,23 @@ Academically, this presented a challenge that would allow us to expand the proje
 Practically, quadcopters may have a lot to benefit from this system. Quadcopters are very susceptible to perturbations and changing environments (wind, objects, etc) and having robustness and adaptivity built into the trajectory planner may give the system more resilience against crashes and misnavigation.
 
 ### Our Results
+
+<div class="row justify-content-sm-right">
+    <div class="col-sm-4 mt-4 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/vector_field.jpg" title="Example DS vector field" class="img-fluid rounded z-depth-1" %}
+    </div>
+    
+    <div class="col-sm mt-6 mt-md-0">
+        This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
+    </div>
+
+    
+</div>
+
+### See Our Poster
+
+<embed src="assets/pdf/MEAM_6230_FINAL_POSTER_S25.pdf" type="application/pdf" width="100%" height="600px" title="SE3_Document">
+
 
 <!-- Using this system for a quadcopter was a great way to stress test the system. The original design of LPV-DS is designed for arm manipulators which have some nice properties:
 - Over-Actuated
@@ -100,7 +110,18 @@ These ultimately mean that a robot manipulator can move arbitrarily in any direc
 
 Quadcopters are not any of these which may means using LPV-DS would take some extra work to make viable. -->
 
-<!-- It's easy to include images in a flexible 3-column grid format.
+
+
+
+
+
+
+
+
+
+
+
+It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 
 <div class="row">
@@ -160,4 +181,4 @@ Here's the code for the last row of images above:
 </div>
 ```
 
-{% endraw %} -->
+{% endraw %}

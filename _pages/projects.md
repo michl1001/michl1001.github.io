@@ -2,13 +2,12 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Some projects with too much content for a resume.
-nav: true
+description: <h3>Some projects with too much content for a resume.</h3>
+nav: false
 nav_order: 3
-display_categories: [work, fun]
+#display_categories: [work, fun]
 horizontal: false
 ---
-
 <!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
