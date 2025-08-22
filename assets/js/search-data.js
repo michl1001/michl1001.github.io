@@ -11,17 +11,10 @@ ninja.data = [{
     },
   },{id: "nav-cv-resume",
           title: "CV/Resume",
-          description: "Here is a quick overview of my experience, skills, and interests.",
+          description: "Here is a quick overview of my experience, skills, and interests. You can download a shortened PDF version through the link on the right.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "Some projects with too much content for a resume.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
           },
         },{id: "nav-teaching",
           title: "Teaching",
