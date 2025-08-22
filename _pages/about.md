@@ -60,15 +60,15 @@ I'm currently working at the University of Pennsylvania, Updating the hardware a
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
   <div class="container">
-    <div class="row row-cols-1 row-cols-md">
-    {% for project in sorted_projects limit:3 %}
+    <div class="row row-cols-1 row-cols-md-2">
+    {% for project in sorted_projects limit:4 %}
       {% include projects_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects limit:3%}
+    {% for project in sorted_projects limit:4%}
       {% include projects.liquid %}
     {% endfor %}
   </div>
@@ -87,14 +87,14 @@ I'm currently working at the University of Pennsylvania, Updating the hardware a
 
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects limit:3 %}
+    {% for project in sorted_projects limit:4 %}
       {% include projects_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
   {% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects limit:3 %}
+    {% for project in sorted_projects limit:4 %}
       {% include projects.liquid %}
     {% endfor %}
   </div>
