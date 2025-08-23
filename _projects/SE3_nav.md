@@ -34,11 +34,15 @@ In the system explained above, the robot would likely have to replan it's moveme
     <div class="col-sm mt-4 mt-md-0">
         This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
         <br>
+        <br>
 
         As an example, take a look at the plot. The red line represents the target trajectory, and the arrows represent the directional control from the DS. You can see that the DS guides the robot towards and long the trajectory across the entire space.
         <br>
+        <br>
 
-        In theroy, a well-fit DS system should be able to produce a global vector field that can generalize most given trajectories.
+        In theory, a well-fit DS system should be able to produce a global vector field that can generalize most given trajectories.
+        <br>
+        <br>
     </div>
 
     <div class="col-sm-6 mt-6 mt-md-0">
@@ -69,11 +73,15 @@ To describe the results in short, we got our system working by including various
     <div class="col-sm mt-5 mt-md-0">
         In long, we generated various trajectories using a more traditional quadcopter simulator using splines and normal PID systems (see the repository <a href="https://github.com/utiasDSL/safe-control-gym">here</a>). These trajectories define the ideal paths possible for the quadcopter - in practice, this would be integrating static environmental information into our navigation. These can be seen as the black lines on the figure. You can see that these trajectories don't have to be exact replications and can either diverge or converge before reaching the target destination.
         <br>
+        <br>
         The original LPV-DS system was designed for solely x-y-z velocities in mind. While this is enough for the over-actuated, holonomic arm manipulator, we can see our quadcopter struggles with staying on the target trajectories. 
+        <br>
         <br>
         To remedy this, we incorporated the Figueroa lab's <a href="https://arxiv.org/abs/2403.16366">SE(3) LPV-DS system</a> which uses orientaiton as part of the input. We can see in the red line that this greatly improved the results of the system but there are still artifacts that cause the quadcopter to drift from the target trajectory.
         <br>
+        <br>
         This led us to finally integrate movement direction information as input into the system as per the <a href="https://arxiv.org/abs/2309.02609">Directionality-Aware Mixture Model (DAMM)</a> from the Figueroa Lab. Using this, we allow the trajectories to focus on the flow of the trajectories to gain more accurate reproductions. This is shown in the purple line, which we can see achieves the most accurate results.
+        <br>
         <br>
     </div>
     
