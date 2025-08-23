@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SE(3) LPV-DS for Quadrotor Systems
-description: Robust, generalized point-to-point trajectory planning.
+description: <h2>Robust, generalized point-to-point trajectory planning.</h2>
 img: assets/img/quad.jpg
 importance: 1
 category: work
@@ -33,38 +33,47 @@ In the system explained above, the robot would likely have to replan it's moveme
 
 
 <div class="row justify-content-sm-right">
-    <div class="col-sm mt-6 mt-md-0">
+    <div class="col-sm mt-4 mt-md-0">
         This problem prompted the Figeuroa Lab to look into the use of dynamical systems to model the robot's trajectory. Dynamical systems trajectory planners have some nice properties that can guarantee that all possible trajectories will converge to a target destination no matter the starting point.
+
+        As an example, take a look at the plot. The red line represents the target trajectory, and the arrows represent the directional control from the DS. You can see that the DS guides the robot towards and long the trajectory across the entire space.
+
+        In theroy, a well-fit DS system should be able to produce a global vector field that can generalize most given trajectories.
     </div>
 
-    <div class="col-sm-4 mt-4 mt-md-0">
+    <div class="col-sm-6 mt-6 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/vector_field.jpg" title="Example DS vector field" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="caption">
-    The red line represents the target trajectory, and the arrows represent the directional control from the DS. You can see that the DS guides the robot towards and long the trajectory across the entire space.
     </div>
 </div>
 
 
-Their particular solution, Linear Parameter Varying Dynamical Systems (LPV-DS), is a system that takes example trajectories and forms a dynamical system model which applies globally the robot's possible states and inputs.
+The Figueroa lab's particular solution, <a href="https://nbfigueroa.github.io/pc-gmm-ds-learning/">Linear Parameter Varying Dynamical Systems (LPV-DS)</a>, is a system that takes example trajectories and forms a dynamical system model which applies globally the robot's possible states and inputs.
 
 In laymen's terms, given a few demonstrated trajectories, the LPV-DS will generalize the trajectories for the entire environment for a more robust trajectory formulation. This means perturbation recovery is built into how the trajectory planning.
 
 ### Why put it on a quadcopter?
 
-Academically, this presented a challenge that would allow us to expand the project to a new area and address it's potential limitations.
+Academically, this presented a challenge that would allow us to expand the project to a new area and address it's potential limitations. We believed achieving this would require us to leverage orientational information in order to allow the planned trajectories to be more in line with the possible movements of the quadcopter - since quadcopters rely on their orientation for directional motion. 
 
 Practically, quadcopters may have a lot to benefit from this system. Quadcopters are very susceptible to perturbations and changing environments (wind, objects, etc) and having robustness and adaptivity built into the trajectory planner may give the system more resilience against crashes and misnavigation.
 
 ### Our Results
 
 <div class="row justify-content-sm-right">
-    <div class="col-sm-4 mt-4 mt-md-0">
+    <div class="col-sm-5 mt-5 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/SE3_results.png" title="SE3 Results" class="img-fluid rounded z-depth-1" %}
     </div>
     
-    <div class="col-sm mt-6 mt-md-0">
-        asjdfklsaf;lakdjfl;sdakjfa;kjdf;sljf;aklsjf
+    <div class="col-sm mt-5 mt-md-0">
+        We generated various trajectories using a more traditional quadcopter simulator using splines and normal PID systems (see the repository <a href="https://github.com/utiasDSL/safe-control-gym">here</a>). These trajectories define the ideal paths possible for the quadcopter - in practice, this would be integrating static environmental information into our navigation. These can be seen as the black lines on the figure. You can see that these trajectories don't have to be exact replications and can either diverge or converge before reaching the target destination.
+        
+        To describe the planner result in short, we did get our system working with modifications to the original SE3 system.
+        
+        In long, the original LPV-DS system was designed for solely x-y-z velocities in mind. While this is enough for the over-actuated, holonomic arm manipulator, we can see our quadcopter struggles with staying on the target trajectories. 
+        
+        To remedy this, we incorporated the Figueroa lab's <a href="https://arxiv.org/abs/2403.16366">SE(3) LPV-DS system</a> which uses orientaiton as part of the input. We can see in the red line that this greatly improved the results of the system but there are still artifacts that cause the quadcopter to drift from the target trajectory.
+
+        This lead us to finally integrate movement direction information as input into the system as per the <a href="https://arxiv.org/abs/2309.02609">Directionality-Aware Mixture Model (DAMM)</a> from the Figueroa Lab. Using this, we allow the trajectories to focus on the flow of the trajectories to gain more accurate reproductions. We applied This is shouwn in the purple line.
     </div>
 
     
@@ -72,7 +81,7 @@ Practically, quadcopters may have a lot to benefit from this system. Quadcopters
 
 ### See Our Poster
 
-<embed src="assets/pdf/MEAM_6230_FINAL_POSTER_S25.pdf" type="application/pdf" width="100%" height="600px" title="SE3_Document">
+<embed src="/assets/pdf/MEAM_6230_FINAL_POSTER_S25.pdf" type="application/pdf" width="100%" height="600px" title="SE3_Document">
 
 
 <!-- Using this system for a quadcopter was a great way to stress test the system. The original design of LPV-DS is designed for arm manipulators which have some nice properties:
@@ -121,64 +130,3 @@ Quadcopters are not any of these which may means using LPV-DS would take some ex
 
 
 
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
