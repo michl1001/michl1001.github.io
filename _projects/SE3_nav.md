@@ -1,7 +1,7 @@
 ---
 layout: page
 title: SE(3) LPV-DS for Quadrotor Systems
-description: <h2>Robust, generalized point-to-point trajectory planning.</h2>
+description: Robust, generalized point-to-point trajectory planning
 img: assets/img/quad.jpg
 importance: 1
 category: work
