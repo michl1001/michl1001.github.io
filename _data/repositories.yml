@@ -6,5 +6,5 @@ repo_description_lines_max: 2
 github_repos:
   - acmucsd/membership-portal
   - ese5160/a14g-final-submission-t17-team-gotcha
-#  - upenn-embedded/UPenn-embedded-sys-handbook
+  #  - upenn-embedded/UPenn-embedded-sys-handbook
   - AnnLe4869/cse145_web_presence

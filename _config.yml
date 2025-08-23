@@ -5,7 +5,7 @@
 title: blank
 # the website title (if blank, full name will be used instead)
 first_name: Michael Shao
-middle_name: 
+middle_name:
 last_name:
 contact_note: >
   If you would like to get in touch, please send me an email at <a href="mailto:mlshaojr@gmail.com">mlshaojr@gmail.com</a>.
@@ -139,7 +139,7 @@ giscus:
 #newsletter:
 #  enabled: false
 #  endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
-  # https://loops.so/docs/forms/custom-form
+# https://loops.so/docs/forms/custom-form
 
 # -----------------------------------------------------------------------------
 # Collections

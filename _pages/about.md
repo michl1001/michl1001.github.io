@@ -23,7 +23,6 @@ announcements:
 display_categories: [work]
 horizontal: true
 
-
 latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
@@ -34,4 +33,4 @@ latest_posts:
 
 My main interest is in resource-constrained robotics - to design, build, and control robots that don't have to rely exclusively on expensive, high-end hardware by exploiting the underlying controls and embedded systems. My experience is grounded in embedded systems, control, and backend systems with additional experience in networking, architecture, and software engineering.
 
-I'm currently working at the University of Pennsylvania, Updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160). 
+I'm currently working at the University of Pennsylvania, Updating the hardware and firmware infrastructure for the IoT edge devices course (ESE 5160).

@@ -23,11 +23,10 @@ Organize your courses by years, topics, or universities, however you like! -->
     </div>
 </div>
 
-
 #### Course description:
 
 > ESE5160 is a hands-on course that teaches its students the tools needed to design and prototype an embedded device. The design of an Internet of Things (IoT) device is used as a medium to teach the students concepts on embedded programming, hardware architecture design, IoT, and the cloud. [...] Students will pair up to design an IoT device from the ground up. Industry tools and best practices will be introduced to the student and applied in this accelerated electronics product cycle. At the end of the semester, each group will end up with a physical prototype of their embedded system design
-Credit: [https://ese5180.seas.upenn.edu/](https://ese5160.seas.upenn.edu/)
+> Credit: [https://ese5180.seas.upenn.edu/](https://ese5160.seas.upenn.edu/)
 
 #### Main Contributions
 
@@ -65,7 +64,6 @@ Credit: [https://embedded.seas.upenn.edu/](https://embedded.seas.upenn.edu/)
 
 <br>
 <br>
-
 
 ## University of California, San Diego
 

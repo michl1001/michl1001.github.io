@@ -44,6 +44,7 @@ In the system explained above, the robot would likely have to replan it's moveme
     <div class="col-sm-6 mt-6 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/vector_field.jpg" title="Example DS vector field" class="img-fluid rounded z-depth-1" %}
     </div>
+
 </div>
 
 The Figueroa lab's particular solution, <a href="https://nbfigueroa.github.io/pc-gmm-ds-learning/">Linear Parameter Varying Dynamical Systems (LPV-DS)</a>, is a system that takes example trajectories and forms a dynamical system model which applies globally the robot's possible states and inputs.
@@ -52,7 +53,7 @@ In laymen's terms, given a few demonstrated trajectories, the LPV-DS will genera
 
 ### Why put it on a quadcopter?
 
-Academically, this presented a challenge that would allow us to expand the project to a new area and address it's potential limitations. We believed achieving this would require us to leverage orientational information in order to allow the planned trajectories to be more in line with the possible movements of the quadcopter - since quadcopters rely on their orientation for directional motion. 
+Academically, this presented a challenge that would allow us to expand the project to a new area and address it's potential limitations. We believed achieving this would require us to leverage orientational information in order to allow the planned trajectories to be more in line with the possible movements of the quadcopter - since quadcopters rely on their orientation for directional motion.
 
 Practically, quadcopters may have a lot to benefit from this system. Quadcopters are very susceptible to perturbations and changing environments (wind, objects, etc) and having robustness and adaptivity built into the trajectory planner may give the system more resilience against crashes and misnavigation.
 
