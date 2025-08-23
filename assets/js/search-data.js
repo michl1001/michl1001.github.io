@@ -39,9 +39,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-",
-          title: '',
-          description: "",
+          section: "News",},{id: "projects-se-3-lpv-ds-for-quadrotor-systems",
+          title: 'SE(3) LPV-DS for Quadrotor Systems',
+          description: "Robust, generalized point-to-point trajectory planning",
           section: "Projects",handler: () => {
               window.location.href = "/projects/SE3_nav.html";
             },},{
