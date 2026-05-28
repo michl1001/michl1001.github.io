@@ -125,7 +125,7 @@
 #        - Description 2. #
 
 - title: Skills
-  type: list
+  type: nested_list
   contents:
     - title: Programming Languages
       items:
