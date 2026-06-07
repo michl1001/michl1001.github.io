@@ -6,8 +6,8 @@ img: assets/img/quad.jpg
 importance: 1
 category: Research
 related_publications: false
-toc:
-  beginning: true
+# toc:
+#   beginning: true
 ---
 
 #### May 2025
