@@ -40,7 +40,7 @@
     - title: Real-Time Controls Software Engineer (Associate Technical Member)
       institution: OPEX Corp
       year: 2025 - Present
-      description: 
+      description:
         # - Implemented new features for the SureSortX IBOT to ensure more accurate conveyor motion for non-standard belts
         - Developed embedded firmware in C for autonomous, self-charging robotic vehicles for warehouse, facilitating product sorting and order fetching for warehouse distribution centers.
         - Investigated root causes of firmware failures through log analysis, debugging, and hardware testing, resulting in faster issue resolution and improved reliability.
