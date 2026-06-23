@@ -27,6 +27,8 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+enable_project_categories: false
 ---
 
 #### Hello! I'm Michael! A Roboticist and Embedded Systems Engineer.
